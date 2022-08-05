@@ -1,0 +1,17 @@
+[package]
+name = "rustemon-rust"
+version = "0.1.0"
+edition = "2021"
+default-run = "name_to_location"
+
+[[bin]]
+name = "name_to_location"
+path = "src/bin/name_to_location.rs"
+
+[dependencies]
+rustemon = "2.0.0"
+tokio = {version = "1.19.2", features = ["full"]}
+actix-web = "4"
+reqwest = "0.11.11"
+serde = "1.0.142"
+serde_json = "1.0.83"
