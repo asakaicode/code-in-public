@@ -7,7 +7,7 @@ fn get_generation_url(location: &Location) -> String {
     let mut game_indices_clone = game_indices.clone();
     let game_index = game_indices_clone.pop().unwrap();
     let game_generation = game_index.generation.as_ref().unwrap();
-    let mut game_generation_clone = game_generation.clone();
+    let game_generation_clone = game_generation.clone();
     let generation_url = game_generation_clone.url.unwrap();
     generation_url
 }
