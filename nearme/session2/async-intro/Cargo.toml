@@ -2,6 +2,15 @@
 name = "async-intro"
 version = "0.1.0"
 edition = "2021"
+default-run = "parallel"
+
+[[bin]]
+name = "parallel"
+path = "src/parallelism.rs"
+
+[[bin]]
+name = "concurrency"
+path = "src/concurrency.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
